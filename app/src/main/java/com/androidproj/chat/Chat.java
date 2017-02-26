@@ -1,9 +1,13 @@
 package com.androidproj.chat;
 
-/**
- * Created by pthhung1997 on 2/25/17.
- */
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
-public class Chat {
+public class Chat extends AppCompatActivity {
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_chat);
+    }
 }
