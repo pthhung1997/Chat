@@ -9,5 +9,41 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.androidproj.chat.Chat">
+    <ListView
+        android:id="@+id/lstvChat"
+        android:layout_width="match_parent"
+        android:layout_height="435dp"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/form"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/edtChatText"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/btnSend"
+            />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="SEND"
+            android:id="@+id/btnSend"
+            android:layout_alignBottom="@+id/edtChatText"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
 
 </RelativeLayout>
